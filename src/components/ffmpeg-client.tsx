@@ -103,6 +103,7 @@ const FFmpegClient: React.FC<FFmpegClientProps> = ({
     if (files.length > 0 && ffmpeg) {
       compressImages();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [files, ffmpeg]);
 
   return null;
